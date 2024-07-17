@@ -12,7 +12,7 @@ for (let index = 0; index < ROUTES.length; index++) {
     const route = ROUTES[index];
 
     app.get(route.route, async (_, res) => {
-        crawler(route.crawler_url, route.crawler).then((data) => {
+        crawler(route.crawler_url, route.crawler,_.params).then((data) => {
             res.send(route.response(data));
         });
     });

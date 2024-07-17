@@ -37,7 +37,7 @@ exports.ROUTES = [
         },
     },
     {
-        route: "/year",
+        route: "/year/:year",
         crawler: getYear,
         crawler_url: URLs.year,
         response: (data) => {
