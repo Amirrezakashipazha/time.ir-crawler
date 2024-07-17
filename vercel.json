@@ -4,9 +4,7 @@
             "maxDuration": 60
         }
     },
-    "rewrites": [
-        { "source": "/(.*)", "destination": "/" }
-    ],
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }],
     "headers": [
         {
             "source": "/(.*)",
