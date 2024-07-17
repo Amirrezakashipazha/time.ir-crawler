@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require('cors'); 
 const app = express();
 const port = 3001;
 
@@ -6,7 +7,7 @@ const crawler = require("./crawlers/crawler");
 const { ROUTES } = require("./ROUTES");
 
 app.use(express.static("public"));
-
+app.use(cors());
 // --------------- crawlers Routes ------------------
 for (let index = 0; index < ROUTES.length; index++) {
     const route = ROUTES[index];
