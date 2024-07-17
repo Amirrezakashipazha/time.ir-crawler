@@ -26,35 +26,13 @@ app.get("/", (req, res) => {
         message: "server is running",
         github: "https://github.com/Amir-Alipour/time.ir-crawler",
         routes: [
-            {
-                route: "/",
-                description: "home",
-            },
-            {
-                route: "/date",
-                description: "the current date",
-                url: `https://${baseURL}/date`,
-            },
-            {
-                route: "/month",
-                description: "the current month and it events",
-                url: `https://${baseURL}/month`,
-            },
+          
             {
                 route: "/year",
                 description: "the current year and it months with events",
                 url: `https://${baseURL}/year`,
             },
-            {
-                route: "/qoute",
-                description: "rondom qoute (persian)",
-                url: `https://${baseURL}/qoute`,
-            },
-            {
-                route: "/books",
-                description: "time.ir book suggestion",
-                url: `https://${baseURL}/books`,
-            },
+           
         ],
     });
 });
